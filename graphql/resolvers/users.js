@@ -76,10 +76,9 @@ const userResolvers = {
       //     });
       // });
       const newUser = new User({
-        id,
-        email,
         username,
         password,
+        email,
         createdAt: new Date().toISOString(),
       });
       const res = await newUser.save();
